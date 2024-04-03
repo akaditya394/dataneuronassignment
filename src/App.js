@@ -1,23 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { Panel, PanelGroup, PanelResizeHandle } from "react-resizable-panels";
+import AddIngridients from "./components/AddIngridients/AddIngridients";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <PanelGroup direction="vertical">
+        <Panel>
+          <PanelGroup direction="horizontal">
+            <Panel defaultSize={30} minSize={20}>
+              <AddIngridients />
+            </Panel>
+            <PanelResizeHandle />
+            <Panel minSize={30}>
+              <div className="blue">BLUE</div>
+            </Panel>
+          </PanelGroup>
+        </Panel>
+        <PanelResizeHandle />
+        <Panel>
+          <div className="green">Green</div>
+        </Panel>
+      </PanelGroup>
     </div>
   );
 }
