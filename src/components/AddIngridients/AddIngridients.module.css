@@ -1,0 +1,48 @@
+.addIngridients {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  background-color: #e72929;
+  color: white;
+  height: 100%;
+}
+
+.listOfIngridients {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  max-height: 200px;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+}
+
+.form {
+  width: 90%;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.input {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+.input:focus {
+  outline: none;
+  border-color: #e96666;
+}
+
+.appName {
+  font-family: "Englebert", sans-serif;
+}
+
+.decision {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
