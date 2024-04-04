@@ -1,0 +1,11 @@
+.ingridient {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fa7070;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}

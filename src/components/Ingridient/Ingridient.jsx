@@ -1,10 +1,21 @@
 import React from "react";
+import styles from "./Ingridient.module.css";
+import { useDispatch } from "react-redux";
+import { removeingridientList } from "../../redux/slices/ingridientListReducer";
 
-const Ingridient = ({ name }) => {
+const Ingridient = ({ name, removeAndUpdate }) => {
+  const dispatch = useDispatch();
   return (
-    <div>
+    <div className={styles.ingridient}>
       {name.substring(0, 1).toUpperCase() + name.substring(1, name.length)}
-      <button>X</button>
+      <button
+        onClick={() => {
+          removeAndUpdate(name);
+          dispatch(removeingridientList(name));
+        }}
+      >
+        X
+      </button>
     </div>
   );
 };
