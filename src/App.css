@@ -2,14 +2,26 @@
   height: 100vh;
   width: 100vw;
 }
-.upperHalf {
-  width: 100%;
-  height: 500px;
+
+.handleResizeHorizontal {
+  width: 0.1rem;
+  background-color: #fa7070;
+  transition: all 0.2s linear;
 }
-.lowerHalf {
-  width: 100%;
-  height: 100%;
+.handleResizeVertical {
+  height: 0.1rem;
+  background-color: #fa7070;
+  transition: all 0.2s linear;
 }
+.handleResizeHorizontal:hover {
+  width: 0.2rem;
+  background-color: #ff0000;
+}
+.handleResizeVertical:hover {
+  height: 0.2rem;
+  background-color: #ff0000;
+}
+
 .red {
   width: 100%;
   height: 100%;

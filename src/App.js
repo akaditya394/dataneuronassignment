@@ -1,25 +1,31 @@
 import "./App.css";
 import { Panel, PanelGroup, PanelResizeHandle } from "react-resizable-panels";
 import AddIngridients from "./components/AddIngridients/AddIngridients";
+import Recipe from "./components/Recipe/Recipe";
+import { useSelector } from "react-redux";
+import { selectrecipe } from "./redux/slices/recipeReducer";
+import Nutrients from "./components/Nutrients/Nutrients";
 
 function App() {
+  const recipe = useSelector(selectrecipe);
+
   return (
     <div className="App">
       <PanelGroup direction="vertical">
         <Panel>
           <PanelGroup direction="horizontal">
-            <Panel defaultSize={30} minSize={20}>
+            <Panel defaultSize={30}>
               <AddIngridients />
             </Panel>
-            <PanelResizeHandle />
-            <Panel minSize={30}>
-              <div className="blue">BLUE</div>
+            <PanelResizeHandle className="handleResizeHorizontal" />
+            <Panel>
+              <Recipe recipe={recipe} />
             </Panel>
           </PanelGroup>
         </Panel>
-        <PanelResizeHandle />
+        <PanelResizeHandle className="handleResizeVertical" />
         <Panel>
-          <div className="green">Green</div>
+          <Nutrients />
         </Panel>
       </PanelGroup>
     </div>
