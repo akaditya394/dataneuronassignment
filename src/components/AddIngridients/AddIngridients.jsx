@@ -37,7 +37,7 @@ const AddIngridients = () => {
 
     // Making POST request to backend API
     try {
-      const url = "http://localhost:3001/";
+      const url = "https://dataneuronassignment.onrender.com/";
 
       const response = await axios.post(url, string);
       // Dispatching action to add generated recipe to Redux store

@@ -15,7 +15,7 @@ const Nutrients = () => {
   const generateNutrients = async (string) => {
     const start = window.performance ? window.performance.now() : 0;
     try {
-      const url = "http://localhost:3001/getNutrients";
+      const url = "https://dataneuronassignment.onrender.com/getNutrients";
 
       const response = await axios.post(url, string);
       setNutrients(response.data);
