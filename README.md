@@ -1,70 +1,79 @@
-# Getting Started with Create React App
+# Flavor App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Flavor is a web application that allows users to generate recipes for dishes based on the ingredients they select. It utilizes Google's Gemini Generative API to generate recipes and provides nutritional content for each selected item.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Recipe Generation**: Users can select ingredients from a list, and the app generates recipes for dishes incorporating those ingredients using Google's Gemini Generative API.
+- **Nutritional Content**: The app displays the nutritional content of each selected ingredient, providing users with insights into their meal's nutritional value.
+- **React Frontend**: The frontend of the app is built using React.js, providing a dynamic and responsive user interface.
+- **Node.js Backend**: The backend is implemented using Node.js and serves as a server for handling API requests and interactions with Google's Gemini API.
+- **Easy to Run**: Flavor comes with simple steps to set up and run the app locally on your machine.
 
-### `npm start`
+## Getting Started
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+To run the Flavor app locally, follow these steps:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Prerequisites
 
-### `npm test`
+- Node.js installed on your machine
+- npm or yarn package manager
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Installation
 
-### `npm run build`
+1. Clone this repository to your local machine:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+   ```bash
+   git clone <repository-url>
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. Navigate to the project directory:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   ```bash
+   cd Flavor
+   ```
 
-### `npm run eject`
+3. Install dependencies for the frontend and backend:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+   ```bash
+   # Install frontend dependencies
+   cd client
+   npm install
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+   # Install backend dependencies
+   cd ..
+   cd server
+   npm install
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Running the App
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. Start the Node.js backend server:
 
-## Learn More
+   ```bash
+   # From the server directory
+   npm start
+   ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+2. Start the React frontend:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+   ```bash
+   # From the client directory
+   npm start
+   ```
 
-### Code Splitting
+3. Open your browser and navigate to `http://localhost:3000` to access the Flavor app.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Usage
 
-### Analyzing the Bundle Size
+1. Upon accessing the app, you will see a list of ingredients.
+2. Select the ingredients you want to include in your recipe.
+3. Click on the "Generate Recipe" button.
+4. The app will use Google's Gemini API to generate a recipe incorporating the selected ingredients.
+5. Nutritional content for each ingredient will be displayed along with the recipe.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## License
 
-### Making a Progressive Web App
+The Flavor app is open-source and available under the [MIT License](LICENSE). Feel free to modify and distribute the code as per the terms of the license.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
