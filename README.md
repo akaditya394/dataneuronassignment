@@ -24,20 +24,15 @@ To run the Flavor app locally, follow these steps:
 1. Clone this repository to your local machine:
 
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/akaditya394/dataneuronassignment.git
    ```
 
 2. Navigate to the project directory:
-
-   ```bash
-   cd Flavor
-   ```
 
 3. Install dependencies for the frontend and backend:
 
    ```bash
    # Install frontend dependencies
-   cd client
    npm install
 
    # Install backend dependencies
@@ -58,8 +53,7 @@ To run the Flavor app locally, follow these steps:
 2. Start the React frontend:
 
    ```bash
-   # From the client directory
-   npm start
+   npm run start
    ```
 
 3. Open your browser and navigate to `http://localhost:3000` to access the Flavor app.
